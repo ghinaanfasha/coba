@@ -79,3 +79,6 @@ footer {
   grid-area: foot;
   border: 1px solid;
 }
+.container {
+  border: 1px solid;
+}

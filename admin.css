@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+main{
+    display: grid;
+    grid-template-areas: 
+        "side head head"
+        "side content content"
+        "side foot foot";
+    grid-template-columns: 12% 88%;
+}
+header {
+    grid-area: head;
+    background-color: #031224;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 23vh;    
+}   
+header h1, header h5 {
+    color: #fefefe;
+    padding-left: 40px;
+}
+article {
+    grid-area: content;
+    border: 1px solid;
+}
+aside {
+    grid-area: side;
+    background-color: #031224;
+    height: 100vh;
+    padding: 0 10px;
+}
+aside .akun {
+    height: 23vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside .akun .profil {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: #fefefe;
+}
+aside .tab {
+    float: left;
+    width: 100%;
+    
+}
+aside .tab button {
+    display: block;
+    background-color: inherit;
+    color: #fefefe;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+aside .tab .tablinks i {
+    padding-right: 15px;
+}
+aside .tab button:hover {
+    background-color: #ccd4f9;
+    color: #031224;
+    border-radius: 10%;
+} 
+aside .tab button.active i {
+    background-color: #ccd4f9;
+    color: #031224;
+    border-radius: 10%;
+}
+footer {
+    grid-area: foot;
+    border: 1px solid;
+}
